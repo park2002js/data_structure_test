@@ -1,8 +1,8 @@
 #include "common.h"
 
 void selSort(int* a, int size){
-    
-    int i, j, smaller;
+
+    int i, j, smaller, temp;
     for(i=0; i<size-1; i++){
 
         smaller = i;
@@ -12,8 +12,11 @@ void selSort(int* a, int size){
                 smaller = j;
             }
         }
-
-        swap(&a[i], &a[smaller]);
+        
+        temp = a[i];
+        a[i] = a[smaller];
+        a[smaller] = temp;
+        //swap(&a[i], &a[smaller]);
 
     }
 }

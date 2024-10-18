@@ -10,7 +10,7 @@ void test_bubble(int* origin, int size, int case_num)
     clock_t end = clock(); 
     
     double t = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Bubble Sort : case '%d' takes %lf seconds on vector of length %d\n", case_num, t, size);
+    printf("Bubble : '%lf'\t", t);
 
     free(vec);
 }
@@ -25,7 +25,7 @@ void test_selection(int* origin, int size, int case_num)
     clock_t end = clock(); 
     
     double t = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Selection Sort : case '%d' takes %lf seconds on vector of length %d\n", case_num, t, size);
+    printf("Selection : '%lf'\t", t);
 
     free(vec);
 }
@@ -40,7 +40,7 @@ void test_insertion(int* origin, int size, int case_num)
     clock_t end = clock(); 
     
     double t = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Insertion sort: case '%d' takes %lf seconds on vector of length %d\n", case_num, t, size);
+    printf("Insertion : '%lf'\t", t);
 
     free(vec);
 }

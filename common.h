@@ -8,11 +8,11 @@
 #include <time.h>
 
 /* common.c */
-int mrand(int);
+int mrand();
 void setRandom();
 
 int *vector( int );
-void makeVec(int*, int, int);
+void makeVec(int*, int);
 
 void swap(int*, int*);
 void printArr(int*, int );

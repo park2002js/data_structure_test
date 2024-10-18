@@ -9,11 +9,11 @@ int *vector( int rows){
 	return vec;
 }
 
-void makeVec(int* vec, int row, int range){
+void makeVec(int* vec, int row){
 	
 	//setRand();
 	for(int i=0; i<row; i++)
-		vec[i] = mrand(range);
+		vec[i] = mrand();
 }
 
 void printArr(int* a, int size){
@@ -33,9 +33,14 @@ void setRandom(){
     srand(time(NULL));
 }
 
-int mrand(int range){
+int mrand(){
 
+    int number = 0;
+    int digits = rand() %3 + 4; // 1000~999999
 
+    for(int i=0; i<digits; i++){
+        number = number * 10 + (rand()%9+1);
+    }
 
-    return rand() % range;
+    return number;
 }
