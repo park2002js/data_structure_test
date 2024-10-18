@@ -5,7 +5,7 @@ void selSort(int* origin, int size){
     memcpy(a, origin, size * sizeof(int));
     
     int i, j, smaller;
-    for(i=1; i<size-1; i++){
+    for(i=0; i<size-1; i++){
 
         smaller = i;
 
