@@ -1,9 +1,7 @@
 #include "common.h"
 
-void insSort(int* origin, int size){
-    
-    int a[size];
-    memcpy(a, origin, size * sizeof(int));
+void insSort(int* a, int size){
+
 
     int i, k, temp;
     for(i = 1; i<size; i++){ // k ¹øÂ°
@@ -34,6 +32,4 @@ void insSort(int* origin, int size){
     //         }     
     //     }
     // }
-
-    printArr(a,8);
 }

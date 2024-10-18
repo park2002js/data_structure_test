@@ -1,8 +1,6 @@
 #include "common.h"
 
-void selSort(int* origin, int size){
-    int a[size];
-    memcpy(a, origin, size * sizeof(int));
+void selSort(int* a, int size){
     
     int i, j, smaller;
     for(i=0; i<size-1; i++){
@@ -18,5 +16,4 @@ void selSort(int* origin, int size){
         swap(&a[i], &a[smaller]);
 
     }
-    printArr(a,8);
 }

@@ -1,11 +1,8 @@
 #include "common.h"
 
 
-void bubSort(int* origin, int size){
-
-    int a[size];
-    memcpy(a, origin, size * sizeof(int));
-
+void bubSort(int *a, int size)
+{
     int lastIndex = size - 1;
 
     int i;

@@ -1,15 +1,26 @@
 #include "common.h"
 
-#define BUFFER_SIZE 10000
-
 int main(){
 
-    int a[] = {8, 5, 6, 2, 4, 7, 1, 3};
+    setRandom();
 
+    int *vec;
 
-
-
-    insSort(a,8);
+    int size = 1000000;
     
-    printArr(a,8);
+    for(int i=1; i<=1; i++)
+    {
+        vec = vector(size);
+        makeVec(vec, size, 100000);
+
+        test_bubble(vec, size, i);
+
+        test_selection(vec, size, i);
+
+        test_insertion(vec, size, i);
+
+        free(vec);
+    }
+
+    //printArr(vec,8);
 }
