@@ -35,12 +35,9 @@ void setRandom(){
 
 int mrand(){
 
-    int number = 0;
-    int digits = rand() %3 + 4; // 1000~999999
+    int number = rand()%999+1; // 1~999
 
-    for(int i=0; i<digits; i++){
-        number = number * 10 + (rand()%9+1);
-    }
+    number = number * 1000 + rand()%1000; // 1000 ~ 999000 + 0 ~ 999
 
     return number;
 }
